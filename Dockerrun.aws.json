@@ -4,7 +4,7 @@
     {
       "name": "client",
       "image": "frankypassword123/listingapp-client",
-      "hostname": "client",
+      "hostname": "front",
       "essential": false,
       "memory": 400
     },
