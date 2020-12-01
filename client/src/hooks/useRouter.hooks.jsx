@@ -14,7 +14,7 @@ const useRouter = () => {
       pathName: location.pathname,
       match,
     };
-  }, [history.push, match.path, match.params, location.pathname]);
+  }, [history.push, location.pathname, match]);
 };
 
 export default useRouter;

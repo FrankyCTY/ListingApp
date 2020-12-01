@@ -6,10 +6,9 @@ S.Frame = styled.div`
 
 `;
 S.ImageContainer = styled.div`
-  height: 92vh;
+  height: 90vh;
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
   left: -2rem;
   background: #f7fbfc;

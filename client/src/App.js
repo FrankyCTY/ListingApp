@@ -1,20 +1,19 @@
 import React from "react";
 // import axios from "axios";
 // import Url from "./url";
-import './App.css';
-import './style/main.css';
 
 import { Switch, Route } from "react-router-dom";
 import GlobalStyle from "./style/globalStyle";
-import NavContainer from "./Containers/nav/nav.container";
+// import NavContainer from "./Containers/nav/nav.container";
 import HomePage from "./Pages/Home/Home.Page";
+import { ThemeProvider } from "styled-components";
+import {theme} from "./style/theme";
 
 function App() {
-
-  return <>
+  return <ThemeProvider theme={theme}>
     <GlobalStyle/>
     {/* Components */}
-    <NavContainer></NavContainer>
+    {/* <NavContainer></NavContainer> */}
     {/* Routes */}
     <Switch>
       <Route
@@ -24,7 +23,7 @@ function App() {
         <HomePage/>
       </Route> 
     </Switch>
-  </>;
+  </ThemeProvider>;
 }
 
 export default App;

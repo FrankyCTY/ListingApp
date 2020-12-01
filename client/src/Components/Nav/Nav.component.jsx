@@ -30,7 +30,7 @@ Nav.TopContainer = function TopContainer({children, ...restProps}) {
 
 Nav.LogoContainer = function LogoContainer({children, ...restProps}) {
   return <S.LogoContainer {...restProps}>
-    <Link href="/">
+    <Link to="/">
       <S.LogoSmall src={LogoSmallSvg}></S.LogoSmall>
     </Link>
     {children}
