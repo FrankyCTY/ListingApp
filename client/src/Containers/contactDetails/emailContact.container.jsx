@@ -27,7 +27,7 @@ S.EmailContactContainer = styled.div`
 S.Text = styled.p`margin-bottom: .5rem;`;
 
 export default function EmailContactContainer() {
-  return <S.EmailContactContainer className="emailContact-container py-6 hi">
+  return <S.EmailContactContainer className="emailContact-container py-6 md:w-3/12">
     <Icon.RoundedIcon iconClass="iconfont iconemail" iconSize="1.2rem" className="mb-2"/>
     <S.Text className="text-sm md:text-xs font-bold">メールでのお問い合わせ</S.Text>
     <p className="text-xl md:text-lg">info@sennarido.co.jp</p>
