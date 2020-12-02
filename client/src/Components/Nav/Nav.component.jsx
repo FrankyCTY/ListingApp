@@ -32,7 +32,7 @@ Nav.TopContainer = function TopContainer({children, ...restProps}) {
   }
   const renderTabletView = () => {
     return <div className="flex">
-      <Nav.SearchBar className="mr-2"/>
+      <Nav.SearchBar className="mr-2 md:mr-6"/>
       <Nav.NavMenuIconsContainer className="static mr-5%"/>
     </div>
   }

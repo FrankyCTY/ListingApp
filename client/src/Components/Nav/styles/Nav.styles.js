@@ -99,6 +99,10 @@ position: relative;
 S.LogoSmall = styled.img`
 width: 3.5rem;
 height: auto;
+
+@media screen and (min-width: 768px) {
+  width: 5.5rem;
+}
 `;
 
 S.SearchBar = styled.div`
@@ -116,6 +120,15 @@ S.SearchInput = styled.input`
   border-radius: 12px;
   font-size: .7rem;
   padding: .3rem 1.5rem .3rem .6rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: .8rem;
+    padding-right: 1.8rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 1rem;
+  }
 `;
 
 S.SearchIcon = styled.i`
@@ -124,6 +137,11 @@ S.SearchIcon = styled.i`
   transform: translateY(-50%);
   right: .4rem;
   font-size: .8rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1rem;
+    right: .6rem;
+  }
 `;
 
 S.NavLinkContainer = styled.div`
@@ -154,6 +172,10 @@ S.NavMenuIconsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    width: 4rem;
+  }
 `;
 
 S.NavMenuIconBtn = styled.i`
@@ -161,6 +183,10 @@ S.NavMenuIconBtn = styled.i`
   cursor: pointer;
   &:hover {
     filter: brightness(1.5);
+  }
+
+  @media screen and (min-width: 768px) {
+    transform: scale(1.2);
   }
 `;
 

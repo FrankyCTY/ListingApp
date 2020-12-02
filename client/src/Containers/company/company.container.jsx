@@ -30,11 +30,11 @@ S.Text = styled.p`margin-bottom: .5rem;`;
 export default function CompanyContainer() {
   return <S.CompanyContainer className="company-container py-6 md:flex-row md:ml-4 md:justify-center md:w-6/12">
     <Nav.LogoContainer className="w-24 mb-2 mr-4"/>
-    <div className="whitespace-no-wrap  transform -translate-y-4">
-      <span className="text-base mb-2 md:text-lg">豬肉雞軟骨餃子 </span>
-      <span className="text-base mb-2 md:text-lg">豬肉雞軟骨餃子 </span>
-      <span className="text-base mb-2 md:text-lg">豬肉雞軟骨餃子 </span>
-      <span className="text-sm mb-2 md:text-lg">豬肉雞軟骨餃子</span>
+    <div className="md:transform md:-translate-y-4">
+      <span className="text-base mb-2 lg:text-lg">豬肉雞軟骨餃子 </span>
+      <span className="text-base mb-2 lg:text-lg">豬肉雞軟骨餃子 </span>
+      <span className="text-base mb-2 lg:text-lg">豬肉雞軟骨餃子 </span>
+      <span className="text-sm mb-2 lg:text-lg">豬肉雞軟骨餃子</span>
     </div>
   </S.CompanyContainer>
 }

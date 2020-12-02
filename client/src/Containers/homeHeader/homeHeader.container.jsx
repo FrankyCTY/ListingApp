@@ -45,11 +45,11 @@ export default function HomeHeaderContainer() {
       <Carousel.ImageContainer imgId={4}>
         <Carousel.Image src={SlideImg04} alt="SlideImg04" />
       </Carousel.ImageContainer>
-      {/* <Decoration.WavyDivider bottomWaveColor={"white"}>
+      <Decoration.WavyDivider bottomWaveColor={"white"}>
         <S.HeaderReadMoreBtnContainer>
           <Button.ReadMoreBtn shape="circle" className="text-xxs md:text-xs lg:text-sm 2xl:text-base"/>
         </S.HeaderReadMoreBtnContainer>
-      </Decoration.WavyDivider> */}
+      </Decoration.WavyDivider>
 
       </div>
       
