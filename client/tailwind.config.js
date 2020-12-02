@@ -11,6 +11,7 @@ module.exports = {
   presets: [],
   theme: {
     screens: {
+      "xs": "550px",
       sm: '640px',
       md: '768px',
       lg: '1024px',
@@ -159,6 +160,7 @@ module.exports = {
       '64': '16rem',
       '128': '32rem',
       '5%': '5%',
+      '10%': '10%',
       '70%': '70%',
     },
     backgroundColor: theme => theme('colors'),

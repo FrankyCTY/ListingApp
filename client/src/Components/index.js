@@ -6,3 +6,4 @@ export {default as Button} from "./Button/Button.component";
 export {default as Icon} from "./Icon/Icon.component";
 export {default as Decoration} from "./Decoration/Decoration.component";
 export {default as Image} from "./Image/Image.component";
+export {default as Card} from "./Card/Card.component";

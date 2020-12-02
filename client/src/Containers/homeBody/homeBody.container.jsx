@@ -38,7 +38,7 @@ export default function HomeBodyContainer() {
         </div>
       </section>
 
-      <section className="homepage-section--2 mt-8 my-16 md:my-24">
+      <section className="homepage-section--2 my-16 md:my-24">
           <S.BigImgContainer>
             <div className="">
               <Decoration.DualText mainText="豬肉雞軟骨餃子" subText="豬肉雞軟骨餃子" />
@@ -47,7 +47,7 @@ export default function HomeBodyContainer() {
             {/* picture */}
             <img className="ml-4" src="https://images.unsplash.com/photo-1605407869548-958d58b7cebc?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&ixlib=rb-1.2.1&q=800&w=1280" alt="pic-04"/>
           </S.BigImgContainer>
-          {/* {!isTabletView && <Button.ReadMoreBtn className="mt-2 mx-auto"/>} */}
+          {!isTabletView && <Button.ReadMoreBtn className="mt-16 mx-auto"/>}
       </section>
 
       <section className="homepage-section--3 relative">

@@ -110,6 +110,7 @@ S.ShortRectangle = styled.div`
 S.ThickRectangle = styled.div`
 background: #e2e8f0;
 height: 256px;
+z-index: -1;
 @media screen and (min-width: 768px) {
   width: 95%;
 }
