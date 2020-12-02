@@ -98,12 +98,16 @@ position: relative;
 
 S.LogoSmall = styled.img`
 width: 3.5rem;
-height: 1rem;
+height: auto;
 `;
 
 S.SearchBar = styled.div`
   width: 55%;
   position: relative;
+
+  @media screen and (min-width: 768px) {
+    width: 300px;
+  }
 `;
 
 S.SearchInput = styled.input`
@@ -128,6 +132,7 @@ S.NavLinkContainer = styled.div`
   justify-content: space-between;
   padding: 2rem 10% 4rem;
   position: relative;
+  box-shadow: 0 5px 12px -12px rgba(0, 0, 0, 0.4);
 `;
 S.NavLinkItem = styled.div`
 width: ${({subText}) => {

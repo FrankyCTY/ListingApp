@@ -3,6 +3,7 @@ import styled, {css} from "styled-components";
 const btnStyles = css`
 outline: 0;
 border: 0;
+cursor: pointer;
 `;
 
 const S = {};
@@ -14,26 +15,35 @@ S.ReadMoreBtn = styled.button`
   box-shadow: 0px 5px 30px rgba(17, 17, 17, 0.3);
   padding: .6em 0;
   width: 95%;
-  margin: 0 auto;
   display: block;
-  font-size: .8rem;
+  font-size: 0.6rem;
   ${({shape}) => {
     switch(shape) {
       case "rect":
         break;
       case "circle":
         return `
-          --size: 4rem;
+          --size: 7em;
           padding: 0;
           width: var(--size);
           height: var(--size);
           border-radius: 50%;
-          font-size: .6rem;
         `;
       default:
         break;
     }
   }}
+
+  @media screen and (min-width: 768px) {
+    ${({shape}) => {
+      if(shape === "rect") {
+        return `
+        width: 12rem;
+        font-size: 0.7rem;
+        `;
+      }
+    }}
+  }
 `;
 
 export default S;

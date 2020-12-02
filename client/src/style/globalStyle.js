@@ -4,6 +4,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     height: 100%;
     width: 100%;
+    
   }
 
   body {
@@ -21,6 +22,13 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     backface-visibility: hidden;
   }
+
+  // * {
+    //   background: #000 !important;
+    //   color: #0f0 !important;
+    //   outline: solid #f00 1px !important;
+    // }
+  
 
   img {
     object-fit: cover;

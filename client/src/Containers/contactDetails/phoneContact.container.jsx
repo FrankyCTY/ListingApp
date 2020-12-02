@@ -10,14 +10,17 @@ S.PhoneContactContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+  
 `;
 
 S.Text = styled.p`margin-bottom: .5rem;`;
 
-export default function EmailContactContainer() {
-  return <S.PhoneContactContainer className="emailContact-container border-4 py-6">
-    <Icon.RoundedIcon iconClass="iconfont iconemail" iconSize="1.2rem" className="mb-2"/>
-    <S.Text className="text-sm font-bold">メールでのお問い合わせ</S.Text>
-    <p className="text-xl">info@sennarido.co.jp</p>
+export default function PhoneContactContainer() {
+  return <S.PhoneContactContainer className="emailContact-container py-6">
+    <Icon.RoundedIcon iconClass="iconfont iconphonenew" className="mb-2"/>
+    <S.Text className="text-sm">お電話でのお問い合わせ</S.Text>
+    <S.Text className="text-2xl">096-287-3000</S.Text>
+    <p className="text-sm">受付時間 9:00〜17:00</p>
   </S.PhoneContactContainer>
 }

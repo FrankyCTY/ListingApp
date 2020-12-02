@@ -10,15 +10,26 @@ S.EmailContactContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      height: 6rem;
+      width: 1px;
+      background: gray;
+    }
+  }
 `;
 
 S.Text = styled.p`margin-bottom: .5rem;`;
 
 export default function EmailContactContainer() {
-  return <S.EmailContactContainer className="emailContact-container border-4 py-6">
-    <Icon.RoundedIcon iconClass="iconfont iconphonenew" className="mb-2"/>
-    <S.Text className="text-sm">お電話でのお問い合わせ</S.Text>
-    <S.Text className="text-2xl">096-287-3000</S.Text>
-    <p className="text-sm">受付時間 9:00〜17:00</p>
+  return <S.EmailContactContainer className="emailContact-container py-6 hi">
+    <Icon.RoundedIcon iconClass="iconfont iconemail" iconSize="1.2rem" className="mb-2"/>
+    <S.Text className="text-sm md:text-xs font-bold">メールでのお問い合わせ</S.Text>
+    <p className="text-xl md:text-lg">info@sennarido.co.jp</p>
   </S.EmailContactContainer>
 }

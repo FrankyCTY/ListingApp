@@ -82,20 +82,29 @@ S.EditorialDividerSvg = styled.svg`
 S.WavyDivider = styled.div`
 display: block;
 width: 100%;
-// max-height: 40px;
 margin: 0;
-z-index: 5;
 bottom: 0;
 position: absolute;
 left: 0px;
 float: left;
 color: #FFF;
 text-align: center;
-overflow: hidden;
 
 svg {
   display: block;
 }
+`;
+
+S.DualText = styled.div``;
+
+S.ShortRectangle = styled.div`
+  background: ${({theme}) => theme.mainColor};
+  width: 9rem;
+  height: 3.5rem;
+
+  @media screen and (min-width: 768px) {
+    width: 14rem;
+  }
 `;
 
 export default S;

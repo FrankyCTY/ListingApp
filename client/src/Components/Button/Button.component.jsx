@@ -7,6 +7,6 @@ export default function Button({children}) {
       </>
 }
 
-Button.ReadMoreBtn = function ReadMoreBtn({shape="rect", children, restProps}) {
+Button.ReadMoreBtn = function ReadMoreBtn({shape="rect", children, ...restProps}) {
   return <S.ReadMoreBtn shape={shape} {...restProps}><p>詳しく見る</p><span>read more</span>{children}</S.ReadMoreBtn>
 }

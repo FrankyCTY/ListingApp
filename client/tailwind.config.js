@@ -6,7 +6,7 @@ module.exports = {
   purge: [],
   target: 'relaxed',
   prefix: '',
-  important: false,
+  important: true,
   separator: ':',
   presets: [],
   theme: {
@@ -15,6 +15,7 @@ module.exports = {
       md: '768px',
       lg: '1024px',
       xl: '1280px',
+      "2xl": '1536px',
     },
     colors: {
       transparent: 'transparent',
@@ -149,11 +150,15 @@ module.exports = {
       '16': '4rem',
       '20': '5rem',
       '24': '6rem',
+      '28': '7rem',
       '32': '8rem',
+      '36': '9rem',
       '40': '10rem',
       '48': '12rem',
       '56': '14rem',
       '64': '16rem',
+      '5%': '5%',
+      '70%': '70%',
     },
     backgroundColor: theme => theme('colors'),
     backgroundImage: {
@@ -270,6 +275,7 @@ module.exports = {
       mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
     },
     fontSize: {
+      xxs: "0.6rem",
       xs: '0.75rem',
       sm: '0.875rem',
       base: '1rem',
@@ -451,6 +457,7 @@ module.exports = {
       '10/12': '83.333333%',
       '11/12': '91.666667%',
       full: '100%',
+      '30%': "30%",
       screen: '100vw',
     }),
     zIndex: {
@@ -625,6 +632,11 @@ module.exports = {
       '-full': '-100%',
       '-1/2': '-50%',
       '1/2': '50%',
+      '25%': '25%',
+      '40%': '40%',
+      '60%': '60%',
+      '35%': '35%',
+      '-35%': '-35%',
       full: '100%',
     }),
     skew: {

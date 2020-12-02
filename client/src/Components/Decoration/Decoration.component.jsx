@@ -6,10 +6,11 @@ export default function Decoration({children}) {
 }
 
 Decoration.WavyDivider = function WavyDivider({
-  bottomWaveColor
+  bottomWaveColor, children, ...restProps
 }) {
-return <S.WavyDivider>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill={bottomWaveColor} fill-opacity="1" d="M0,192L80,160C160,128,320,64,480,74.7C640,85,800,171,960,208C1120,245,1280,235,1360,229.3L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+return <S.WavyDivider {...restProps}>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill={bottomWaveColor} fillOpacity="1" d="M0,192L80,160C160,128,320,64,480,74.7C640,85,800,171,960,208C1120,245,1280,235,1360,229.3L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+{children}
 </S.WavyDivider>
 }
 
@@ -50,3 +51,14 @@ Decoration.EditorialDivider = function EditorialDivider({
     </S.EditorialDividerSvg>
   );
 };
+
+Decoration.DualText = function DualText({extraClass, mainText, subText, children, ...restProps}) {
+  return <S.DualText className={`flex ${extraClass}`} {...restProps}>
+  <span className="block w-4 text-sm transform translate-y-20 mr-2">{mainText}</span>
+  <span className="text-xl block w-4">{subText}</span>
+</S.DualText>
+}
+
+Decoration.ShortRectangle = function ShortRectangle({children, ...restProps}) {
+  return <S.ShortRectangle {...restProps}>{children}</S.ShortRectangle>
+}
