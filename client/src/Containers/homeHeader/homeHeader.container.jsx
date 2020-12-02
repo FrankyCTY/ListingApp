@@ -32,7 +32,7 @@ export default function HomeHeaderContainer() {
   const isTabletView = useMediaQuery({ query: "(min-width: 768px)" });
 
   return <div className="relative">
-      <div className="overflow-hidden">
+      <Carousel className="overflow-hidden">
       {/* <Carousel.ImageContainer imgId={1}>
           <Carousel.Image src={SlideImg01} alt="SlideImg01" />
         </Carousel.ImageContainer>
@@ -51,7 +51,7 @@ export default function HomeHeaderContainer() {
         </S.HeaderReadMoreBtnContainer>
       </Decoration.WavyDivider>
 
-      </div>
+      </Carousel>
       
       {isTabletView && <S.HighlightedLinksContainer>
         {new Array(4).fill(1).map((x, idx) => {
