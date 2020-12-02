@@ -54,11 +54,15 @@ Decoration.EditorialDivider = function EditorialDivider({
 
 Decoration.DualText = function DualText({extraClass, mainText, subText, children, ...restProps}) {
   return <S.DualText className={`flex ${extraClass}`} {...restProps}>
-  <span className="block w-4 text-sm transform translate-y-20 mr-2">{mainText}</span>
-  <span className="text-xl block w-4">{subText}</span>
+  <span className="block w-4 text-xs md:text-sm transform translate-y-20 mr-2">{mainText}</span>
+  <span className="text-sm md:text-xl block w-4">{subText}</span>
 </S.DualText>
 }
 
 Decoration.ShortRectangle = function ShortRectangle({children, ...restProps}) {
   return <S.ShortRectangle {...restProps}>{children}</S.ShortRectangle>
+}
+
+Decoration.ThickRectangle = function ThickRectangle({children, ...restProps}) {
+  return <S.ThickRectangle {...restProps}>{children}</S.ThickRectangle>
 }

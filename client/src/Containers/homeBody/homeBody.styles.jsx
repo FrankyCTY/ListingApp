@@ -23,37 +23,9 @@ S.PicOneContainer = styled.div`
   }
 `;
 
-S.Section3PlaceHolder = styled.div`
-  height: 35rem; 
-  @media screen and (min-width: 768px) {
-    height: 44rem;
-  }
-`;
-
-S.Section4PlaceHolder = styled.div`
-  // height: 15rem;
-  // border: 1px solid pink;
-  // @media screen and (min-width: 768px) {
-  //   height: 20rem;
-  // }
-`;
-
 S.BigImgContainer = styled.div`
   display: flex;
-  width: 45rem;
-  margin-bottom: 2rem;
-  transform: translateX(20%);
-  
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    right: 0;
-    width: 65rem;
-    transform: translateX(58%);
-  }
-  @media screen and (min-width: 1280px) {
-    width: 65rem;
-    transform: translateX(40%);
-  }
+  transform: translate(46%, 0);
 `;
 
 export default S;

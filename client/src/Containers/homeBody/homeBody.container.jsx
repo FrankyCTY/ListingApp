@@ -15,17 +15,17 @@ export default function HomeBodyContainer() {
         {/* picture */}
         <div className="relative">
           <S.PicOneContainer className="relative">
-              <img className="md:rounded-full md:w-64 md:h-64" src="https://images.unsplash.com/photo-1604870560352-c6fffb2a1e06?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixlib=rb-1.2.1&q=80&w=800" alt="pic01"/>
+              <img className="md:rounded-full md:w-64 md:h-64 lg:w-128 lg:h-128" src="https://images.unsplash.com/photo-1604870560352-c6fffb2a1e06?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixlib=rb-1.2.1&q=80&w=800" alt="pic01"/>
               {isTabletView && <Decoration.DualText mainText="豬肉雞軟骨餃子" subText="豬肉雞軟骨餃子" extraClass="absolute right-0 top-0 transform translate-y-16 lg:translate-y-24 -translate-x-2"/>}
           </S.PicOneContainer>
           <S.ThreeImagesContainer>
-          <img className="w-30% md:w-24 lg:w-32 md:mr-4 lg:mr-6 translate-y-35% transform" src="https://images.unsplash.com/photo-1605459486495-d6236e892999?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixlib=rb-1.2.1&q=80&w=300" alt="pic02"/>
-          <img className="w-30% md:w-24 lg:w-32 md:mr-4 lg:mr-6" src="https://images.unsplash.com/photo-1605459486495-d6236e892999?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixlib=rb-1.2.1&q=80&w=300" alt="pic03"/>
-          <img className="w-30% md:w-24 lg:w-32 md:mr-4 lg:mr-6 -translate-y-35% transform" src="https://images.unsplash.com/photo-1605459486495-d6236e892999?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixlib=rb-1.2.1&q=80&w=300" alt="pic04"/>
+          <img className="w-30% md:w-32 lg:w-64 md:mr-4 lg:mr-8 translate-y-35% transform" src="https://images.unsplash.com/photo-1605459486495-d6236e892999?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixlib=rb-1.2.1&q=80&w=300" alt="pic02"/>
+          <img className="w-30% md:w-32 lg:w-64 md:mr-4 lg:mr-8" src="https://images.unsplash.com/photo-1605459486495-d6236e892999?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixlib=rb-1.2.1&q=80&w=300" alt="pic03"/>
+          <img className="w-30% md:w-32 lg:w-64 md:mr-4 lg:mr-8 -translate-y-35% transform" src="https://images.unsplash.com/photo-1605459486495-d6236e892999?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixlib=rb-1.2.1&q=80&w=300" alt="pic04"/>
           </S.ThreeImagesContainer>
 
           <div className="ml-5%">
-            <div className="md:transform md:translate-x-36 md:-translate-y-12">
+            <div className="md:transform md:translate-x-36 lg:translate-x-64 md:-translate-y-12">
               <h2 className="text-base md:text-xl">豬肉雞軟骨餃子 豬肉雞軟骨餃子</h2>
               <p className="text-xs md:text-sm">豬肉雞軟骨餃子 豬肉雞軟骨餃子</p>
               <p className="text-xs md:text-sm">豬肉雞軟骨餃子 豬肉雞軟骨餃子</p>
@@ -33,21 +33,21 @@ export default function HomeBodyContainer() {
               <p className="text-xs md:text-sm">豬肉雞軟骨餃子 豬肉雞軟骨餃子</p>
               <p className="text-xs md:text-sm">豬肉雞軟骨餃子</p>
             </div>
-            <Button.ReadMoreBtn className="mt-2 mb-24 md:absolute md:right-0 md:transform md:-translate-y-12 md:translate-x-6"/>
+            <Button.ReadMoreBtn className="mt-2 md:absolute md:right-0 md:transform md:-translate-y-12 md:translate-x-6"/>
           </div>
         </div>
       </section>
 
-      <section className="homepage-section--2 mt-8 mb-8">
-        <S.Section3PlaceHolder className="w-screen relative">
+      <section className="homepage-section--2 mt-8 my-16 md:my-24">
           <S.BigImgContainer>
-            <Decoration.DualText mainText="豬肉雞軟骨餃子" subText="豬肉雞軟骨餃子" />
+            <div className="">
+              <Decoration.DualText mainText="豬肉雞軟骨餃子" subText="豬肉雞軟骨餃子" />
+              {isTabletView && <Button.ReadMoreBtn className="absolute" style={{top: "80%", left: "-5rem"}}/>}
+            </div>
             {/* picture */}
             <img className="ml-4" src="https://images.unsplash.com/photo-1605407869548-958d58b7cebc?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&ixlib=rb-1.2.1&q=800&w=1280" alt="pic-04"/>
-          {isTabletView && <Button.ReadMoreBtn className="absolute" style={{top: "80%", left: "-5rem"}}/>}
           </S.BigImgContainer>
-          {!isTabletView && <Button.ReadMoreBtn className="mt-2 mx-auto"/>}
-        </S.Section3PlaceHolder>
+          {/* {!isTabletView && <Button.ReadMoreBtn className="mt-2 mx-auto"/>} */}
       </section>
 
       <section className="homepage-section--3 relative">
