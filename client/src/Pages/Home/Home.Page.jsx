@@ -3,7 +3,7 @@ import {Button, Icon} from "../../Components";
 import EmailContactContainer from "../../Containers/contactDetails/emailContact.container";
 import PhoneContactContainer from "../../Containers/contactDetails/phoneContact.container";
 import NavContainer from "../../Containers/nav/nav.container";
-import HeaderContainer from "../../Containers/header/header.container";
+import HomeHeaderContainer from "../../Containers/homeHeader/homeHeader.container";
 // import HomeHeaderContainer from "../../Containers/homeHeader/homeHeader.container";
 
 export default function HomePage() {
@@ -14,6 +14,6 @@ export default function HomePage() {
     {/* <EmailContactContainer/> */}
     {/* <PhoneContactContainer/> */}
     <NavContainer/>
-    <HeaderContainer/>
+    <HomeHeaderContainer/>
   </div>
 }
