@@ -1,34 +1,34 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import NavBgImg from "../../../../src/assets/images/sitemap_bg.jpg";
 
 const S = {};
 
-S.Frame = styled.div`width: 100%; position: fixed; z-index: 10000;`;
+S.Frame = styled.div`width: 100%; position: fixed; 
+z-index: 10000;
+top: 0;
+left: 0;`;
 
 S.TopContainer = styled.div`
   width: 100%;
   background: ${({isNavMenuOpened}) => {
     return isNavMenuOpened ? "white" : 0;
   }};
-  top: 0;
-  right: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
+  padding-left: 5%;
 
   height: ${({isNavMenuOpened}) => {
     if(isNavMenuOpened) {
-      return "285px";
+      return "3rem";
     } else {
-      return "4rem";
+      return "3rem";
     }
   }};
 `;
 
-S.LogoContainer = styled.div`
-  margin-top: 1rem;
-  padding-left: 5%;
-`;
+// S.LogoContainer = styled.div``;
 
 S.NavBg  = styled.div`
   height: calc(100vh - 285px);
@@ -38,8 +38,9 @@ S.NavBg  = styled.div`
 `;
 
 S.NavTogglerContainer = styled.div`
-  width: 4rem;
-  height: 4rem;
+  --size: 3rem;
+  width: var(--size);
+  height: var(--size);
   background: white;
   display: grid;
   place-items: center;
@@ -96,20 +97,37 @@ position: relative;
 
 
 S.LogoSmall = styled.img`
-width: 7.2rem;
-height: 2.2rem;
+width: 3.5rem;
+height: 1rem;
+`;
+
+S.SearchBar = styled.div`
+  width: 55%;
+  position: relative;
+`;
+
+S.SearchInput = styled.input`
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 12px;
+  font-size: .7rem;
+  padding: .3rem 1.5rem .3rem .6rem;
+`;
+
+S.SearchIcon = styled.i`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: .4rem;
+  font-size: .8rem;
 `;
 
 S.NavLinkContainer = styled.div`
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 18%;
-  height: 150px;
+  background: white;
   display: flex;
   justify-content: space-between;
-  padding: 0 10%;
-  z-index: 20000;
+  padding: 2rem 10% 4rem;
+  position: relative;
 `;
 S.NavLinkItem = styled.div`
 width: ${({subText}) => {
@@ -121,9 +139,26 @@ cursor: pointer;
 &:hover {
   filter: brightness(2);
 }
-
-
 `;
+
+S.NavMenuIconsContainer = styled.div`
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+S.NavMenuIconBtn = styled.i`
+  font-size: ${({iconSize}) => iconSize};
+  cursor: pointer;
+  &:hover {
+    filter: brightness(1.5);
+  }
+`;
+
 S.NavText = styled.span`
 display: block;
 font-size: 1.4rem;

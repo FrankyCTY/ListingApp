@@ -5,6 +5,5 @@ export default function NavContainer() {
   return <Nav>
       <Nav.TopContainer/>
       <Nav.NavLinkContainer/>
-      <Nav.NavBg/>
   </Nav>
 }

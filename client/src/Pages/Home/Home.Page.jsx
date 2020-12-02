@@ -2,6 +2,8 @@ import React from "react";
 import {Button, Icon} from "../../Components";
 import EmailContactContainer from "../../Containers/contactDetails/emailContact.container";
 import PhoneContactContainer from "../../Containers/contactDetails/phoneContact.container";
+import NavContainer from "../../Containers/nav/nav.container";
+import HeaderContainer from "../../Containers/header/header.container";
 // import HomeHeaderContainer from "../../Containers/homeHeader/homeHeader.container";
 
 export default function HomePage() {
@@ -9,7 +11,9 @@ export default function HomePage() {
     {/* <Button.ReadMoreBtn shape="circle"/> */}
     {/* <Icon.RoundedIcon iconClass="iconfont iconphonenew"/> */}
     {/* <Icon.RoundedIcon iconClass="iconfont iconemail" iconSize="1.2rem" /> */}
-    <EmailContactContainer/>
-    <PhoneContactContainer/>
+    {/* <EmailContactContainer/> */}
+    {/* <PhoneContactContainer/> */}
+    <NavContainer/>
+    <HeaderContainer/>
   </div>
 }

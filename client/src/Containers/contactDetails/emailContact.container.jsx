@@ -15,10 +15,10 @@ S.EmailContactContainer = styled.div`
 S.Text = styled.p`margin-bottom: .5rem;`;
 
 export default function EmailContactContainer() {
-  return <S.EmailContactContainer className="emailContact-container border-4">
+  return <S.EmailContactContainer className="emailContact-container border-4 py-6">
     <Icon.RoundedIcon iconClass="iconfont iconphonenew" className="mb-2"/>
-    <S.Text>お電話でのお問い合わせ</S.Text>
-    <S.Text>096-287-3000</S.Text>
-    <p>受付時間 9:00〜17:00</p>
+    <S.Text className="text-sm">お電話でのお問い合わせ</S.Text>
+    <S.Text className="text-2xl">096-287-3000</S.Text>
+    <p className="text-sm">受付時間 9:00〜17:00</p>
   </S.EmailContactContainer>
 }

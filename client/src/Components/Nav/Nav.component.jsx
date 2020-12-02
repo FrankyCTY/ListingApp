@@ -23,18 +23,26 @@ Nav.TopContainer = function TopContainer({children, ...restProps}) {
   const {isTogglerActive} = useContext(NavToggleContext);
   return <S.TopContainer isNavMenuOpened={isTogglerActive} {...restProps}>
       <Nav.LogoContainer/>
+      <Nav.SearchBar/>
       <Nav.NavTogglerContainer/>
     {children}
     </S.TopContainer>
 }
 
+Nav.SearchBar = function SearchBar({children, ...restProps}) {
+  return <S.SearchBar {...restProps}>
+    <S.SearchInput type="text" placeholder="輸入關鍵字 例如: 品牌/種類"></S.SearchInput>
+    <S.SearchIcon className="iconfont iconsearch-copy" />
+  </S.SearchBar>
+}
+
 Nav.LogoContainer = function LogoContainer({children, ...restProps}) {
-  return <S.LogoContainer {...restProps}>
+  return <>
     <Link to="/">
       <S.LogoSmall src={LogoSmallSvg}></S.LogoSmall>
     </Link>
     {children}
-    </S.LogoContainer>
+    </>
 }
 
 Nav.NavBg = function NavBg({children, ...restProps}) {
@@ -58,7 +66,7 @@ Nav.NavTogglerContainer = function NavTogglerContainer({children, ...restProps})
   </S.NavTogglerContainer>
 }
 
-Nav.NavLinkContainer = function NavLinkContainer({children, restProps}) {
+Nav.NavLinkContainer = function NavLinkContainer({children, ...restProps}) {
   const {isTogglerActive} = useContext(NavToggleContext);
   return <>
   {isTogglerActive ? <S.NavLinkContainer {...restProps}>
@@ -66,6 +74,11 @@ Nav.NavLinkContainer = function NavLinkContainer({children, restProps}) {
     <Nav.NavLinkItem mainText="商品紹介" subText="products"/>
     <Nav.NavLinkItem mainText="会社案内" subText="corporate information"/>
     <Nav.NavLinkItem mainText="個人情報保護方針"/>
+    <S.NavMenuIconsContainer>
+      <S.NavMenuIconBtn className="iconfont iconuser" iconSize="1rem"/>
+      <S.NavMenuIconBtn className="iconfont iconcart" iconSize="1.2rem"/>
+    </S.NavMenuIconsContainer>
+
     {children}
   </S.NavLinkContainer> : <></>}
   </>
