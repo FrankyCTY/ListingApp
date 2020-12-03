@@ -47,6 +47,10 @@ S.ProductCardFooter = styled.div`
   box-shadow: 0 0 5px rgba(0, 0, 0, .2);
   text-align: center;
   transition: all 200ms ease-in-out;
+  padding: .7rem 0;
+  justify-content: center;
+  ${({hasExtraComponent}) => hasExtraComponent && "padding-bottom: 0;"}
+  ${({hasExtraComponent}) => hasExtraComponent && "justify-content: space-between"}
 `;
 
 export default S;

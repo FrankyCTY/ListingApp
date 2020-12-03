@@ -57,9 +57,21 @@ justify-content: center;
 align-items: center;
 `;
 
-S.SimpleRoundedBtn = styled.button`
+S.SimpleBtn = styled.button`
 ${btnStyles}
-border-radius: 50%; 
+display: grid;
+place-items: center;
+
+i {
+  font-size: .8em;
+}
+
+${({shape}) => {
+  if(shape === "circle") {
+    return `border-radius: 50%; `;
+  }
+}}
+
 --size: 2em;
 padding: 0;
 width: var(--size);

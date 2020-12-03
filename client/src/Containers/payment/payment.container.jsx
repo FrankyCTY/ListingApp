@@ -20,9 +20,9 @@ export default function PaymentContainer({tailwindClass, ...restProps}) {
     <div className="">
       {/* Quantity of Product Counter */}
       <div className="flex justify-between mb-4 md:mb-8">
-        <Button.SimpleRoundedBtn onClick={onMinusClick} iconClass="iconfont iconminus"/>
+        <Button.SimpleBtn onClick={onMinusClick} iconClass="iconfont iconminus"/>
         <span className="text-lg md:text-xl">{quantity}</span>
-        <Button.SimpleRoundedBtn onClick={() => setQuantity(quantity + 1)} iconClass="iconfont iconplus"/>
+        <Button.SimpleBtn onClick={() => setQuantity(quantity + 1)} iconClass="iconfont iconplus"/>
       </div>
       <Button.CheckOutBtn className="w-full mb-4 md:mb-8 xl:mb-16"/>
     </div>

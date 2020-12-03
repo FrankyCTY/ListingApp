@@ -151,6 +151,10 @@ S.NavLinkContainer = styled.div`
   padding: 2rem 10% 4rem;
   position: relative;
   box-shadow: 0 5px 12px -12px rgba(0, 0, 0, 0.4);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 `;
 S.NavLinkItem = styled.div`
 width: ${({subText}) => {

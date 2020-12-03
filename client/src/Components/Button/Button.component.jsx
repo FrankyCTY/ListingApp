@@ -22,9 +22,9 @@ Button.CheckOutBtn = function ReadMoreBtn({iconClass, children, ...restProps}) {
     </S.CheckOutBtn>
 }
 
-Button.SimpleRoundedBtn = function SimpleRoundedBtn({iconClass, children, ...restProps}) {
-  return <S.SimpleRoundedBtn {...restProps}>
+Button.SimpleBtn = function SimpleBtn({shape="circle", iconClass, children, ...restProps}) {
+  return <S.SimpleBtn shape={shape} {...restProps}>
     <i className={`${iconClass}`} />
     {children}
-    </S.SimpleRoundedBtn>
+    </S.SimpleBtn>
 }
