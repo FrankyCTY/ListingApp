@@ -69,7 +69,7 @@ Decoration.RouteTextBlock = function RouteTextBlock({routeText, nameText, childr
 
 Decoration.PageIntroTextBlock = function PageIntroTextBlock({topText, title, intro, children, ...restProps}) {
   return <S.PageIntroTextBlock {...restProps}>
-    <p className="text-xs mb-2 md:text-sm">{topText}</p>
+    <p className="text-xxs mb-2 md:text-sm">{topText}</p>
     <h1 className="text-2xl md:text-3xl mb-2 font-semibold">{title}</h1>
     <p className="text-xs leading-5 md:text-sm">{intro}</p>
     {children}

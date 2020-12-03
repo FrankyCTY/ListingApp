@@ -4,14 +4,14 @@ const btnStyles = css`
 outline: 0;
 border: 0;
 cursor: pointer;
+background: ${({theme}) => theme.btn.readMoreBtn_bg};
+color: ${({theme}) => theme.btn.readMoreBtn_text};
 `;
 
 const S = {};
 
 S.ReadMoreBtn = styled.button`
   ${btnStyles}
-  background: ${({theme}) => theme.btn.readMoreBtn_bg};
-  color: ${({theme}) => theme.btn.readMoreBtn_text};
   box-shadow: 0px 5px 30px rgba(17, 17, 17, 0.3);
   padding: .6em 0;
   width: 95%;
@@ -44,6 +44,26 @@ S.ReadMoreBtn = styled.button`
       }
     }}
   }
+`;
+
+S.CheckOutBtn = styled.button`
+${btnStyles}
+width: 8rem;
+display: block;
+font-size: 0.6rem;
+padding: .6em 0;
+display: flex;
+justify-content: center;
+align-items: center;
+`;
+
+S.SimpleRoundedBtn = styled.button`
+${btnStyles}
+border-radius: 50%; 
+--size: 2em;
+padding: 0;
+width: var(--size);
+height: var(--size);
 `;
 
 export default S;
