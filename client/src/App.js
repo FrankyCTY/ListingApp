@@ -10,6 +10,7 @@ import CartPage from "./Pages/Cart/Cart.Page";
 import ProductRouter from "./Routers/Product.router";
 import NavContainer from "./Containers/nav/nav.container";
 import HomeHeaderContainer from "./Containers/homeHeader/homeHeader.container";
+import CartBottomBarContainer from "./Containers/cart/cartBottomBar.container";
 import FooterContainer from "./Containers/footer/footer.container.jsx";
 import { ThemeProvider } from "styled-components";
 import {theme} from "./style/theme";
@@ -19,6 +20,7 @@ import {ProtectedRoute} from "./_helpers/routes.helper";
 function App() {
   const route = useRouter();
   const renderNavAndHeader = (!route.pathName.includes("/cart"));
+  const renderCartBottomBar = (route.pathName.includes("/cart"));
 
   return <ThemeProvider theme={theme}>
     <GlobalStyle/>
@@ -51,6 +53,7 @@ function App() {
       </Route>
     </Switch>
     <FooterContainer/>
+    {renderCartBottomBar && <CartBottomBarContainer/>}
     </div>
   </ThemeProvider>;
 }

@@ -22,7 +22,7 @@ Card.ProductCard = function ProductCard({hasCounter=false, cardImg, alt, ...rest
 
 
     <S.ProductCardDecoDiv className="productCard_decoDiv grid place-items-center">
-      <Button.ReadMoreBtn shape="circle" className="text-xs xs:text-base md:text-xs xl:text-lg"/>
+      <Button.TwoLinesBtn shape="circle" className="text-xs xs:text-base md:text-xs xl:text-lg"/>
     </S.ProductCardDecoDiv>
   </S.ProductCardContainer>
 }

@@ -33,7 +33,7 @@ export default function HomeBodyContainer() {
               <p className="text-xs md:text-sm">豬肉雞軟骨餃子 豬肉雞軟骨餃子</p>
               <p className="text-xs md:text-sm">豬肉雞軟骨餃子</p>
             </div>
-            <Button.ReadMoreBtn className="mt-2 md:absolute md:right-0 md:transform md:-translate-y-12 md:translate-x-6"/>
+            <Button.TwoLinesBtn className="mt-2 md:absolute md:right-0 md:transform md:-translate-y-12 md:translate-x-6"/>
           </div>
         </div>
       </section>
@@ -42,12 +42,12 @@ export default function HomeBodyContainer() {
           <S.BigImgContainer>
             <div className="">
               <Decoration.DualText mainText="豬肉雞軟骨餃子" subText="豬肉雞軟骨餃子" />
-              {isTabletView && <Button.ReadMoreBtn className="absolute" style={{top: "80%", left: "-5rem"}}/>}
+              {isTabletView && <Button.TwoLinesBtn className="absolute" style={{top: "80%", left: "-5rem"}}/>}
             </div>
             {/* picture */}
             <img className="ml-4" src="https://images.unsplash.com/photo-1605407869548-958d58b7cebc?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&ixlib=rb-1.2.1&q=800&w=1280" alt="pic-04"/>
           </S.BigImgContainer>
-          {!isTabletView && <Button.ReadMoreBtn className="mt-16 mx-auto"/>}
+          {!isTabletView && <Button.TwoLinesBtn className="mt-16 mx-auto"/>}
       </section>
 
       <section className="homepage-section--3 relative">
@@ -63,7 +63,7 @@ export default function HomeBodyContainer() {
           </div>
         {/* </S.Section4PlaceHolder> */}
         <div className="overflow-hidden">
-          <Button.ReadMoreBtn className="mx-auto mt-2 mb-12 md:absolute md:right-0 md:transform md:-translate-y-12 md:translate-x-6"/>
+          <Button.TwoLinesBtn className="mx-auto mt-2 mb-12 md:absolute md:right-0 md:transform md:-translate-y-12 md:translate-x-6"/>
         </div>
       </section>
   </div>

@@ -4,15 +4,17 @@ const btnStyles = css`
 outline: 0;
 border: 0;
 cursor: pointer;
-background: ${({theme}) => theme.btn.readMoreBtn_bg};
-color: ${({theme}) => theme.btn.readMoreBtn_text};
+background: ${({outline, theme}) => outline ? theme.btn.readMoreBtn_text : theme.secondColor};
+color: ${({outline, theme}) => outline ? theme.secondColor : theme.btn.readMoreBtn_text};
+
+${({outline, theme}) => outline && `border: 1px solid ${theme.secondColor}`};
 `;
 
 const S = {};
 
-S.ReadMoreBtn = styled.button`
+S.TwoLinesBtn = styled.button`
   ${btnStyles}
-  box-shadow: 0px 5px 30px rgba(17, 17, 17, 0.3);
+  // box-shadow: 0px 5px 30px rgba(17, 17, 17, 0.3);
   padding: .6em 0;
   width: 95%;
   display: block;

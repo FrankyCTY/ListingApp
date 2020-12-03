@@ -21,6 +21,6 @@ export default function ProductListPage({}) {
       </GridContainer>
     </div>
 
-    <Button.ReadMoreBtn className="mx-auto my-16 md:w-128"/>
+    <Button.TwoLinesBtn className="mx-auto my-16 md:w-128"/>
   </div>
 }

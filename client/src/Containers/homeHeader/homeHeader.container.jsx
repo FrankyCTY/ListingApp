@@ -8,7 +8,7 @@ import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
 
 const S ={};
-S.HeaderReadMoreBtnContainer = styled.div`
+S.HeaderTwoLinesBtnContainer = styled.div`
   position: absolute;
   right: 1rem;
   bottom: 3rem;
@@ -46,9 +46,9 @@ export default function HomeHeaderContainer() {
         <Carousel.Image src={SlideImg04} alt="SlideImg04" />
       </Carousel.ImageContainer>
       <Decoration.WavyDivider bottomWaveColor={"white"}>
-        <S.HeaderReadMoreBtnContainer>
-          <Button.ReadMoreBtn shape="circle" className="text-xxs md:text-xs lg:text-sm 2xl:text-base"/>
-        </S.HeaderReadMoreBtnContainer>
+        <S.HeaderTwoLinesBtnContainer>
+          <Button.TwoLinesBtn shape="circle" className="text-xxs md:text-xs lg:text-sm 2xl:text-base"/>
+        </S.HeaderTwoLinesBtnContainer>
       </Decoration.WavyDivider>
 
       </Carousel>

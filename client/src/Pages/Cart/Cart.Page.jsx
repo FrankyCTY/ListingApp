@@ -29,9 +29,8 @@ const CartItemSection = () => {
   </GridContainer>
   </div>
 
-: <div className="flex">
-
-  <AspectRatioImageContainer className="img-container w-4/12">
+: new Array(12).fill(1).map((card, idx) => <div className="flex mb-2" key={idx}>
+  <AspectRatioImageContainer className="img-container w-4/12 mr-4">
     <img src="https://images.unsplash.com/photo-1605452052713-e76a575c96a2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&ixlib=rb-1.2.1&q=80&w=600" alt="img9"/>
   </AspectRatioImageContainer>
 
@@ -45,6 +44,6 @@ const CartItemSection = () => {
     </div>
     <Counter.CardCounter btnShape="circle"/>
   </div>
-</div>
+</div>)
 }
 
