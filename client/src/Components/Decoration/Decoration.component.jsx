@@ -61,8 +61,8 @@ Decoration.DualText = function DualText({extraClass, mainText, subText, children
 
 Decoration.RouteTextBlock = function RouteTextBlock({routeText, nameText, children, ...restProps}) {
   return <div {...restProps}>
-      <S.RouteText className="text-xs">{routeText}</S.RouteText>
-      <p className="text-xl font-bold">{nameText}</p>
+      <S.RouteText className="text-xs lg:text-base">{routeText}</S.RouteText>
+      <p className="text-xl lg:text-3xl font-bold">{nameText}</p>
       {children}
     </div>
 }
