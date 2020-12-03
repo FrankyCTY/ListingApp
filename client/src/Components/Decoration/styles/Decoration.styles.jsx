@@ -97,6 +97,26 @@ svg {
 
 S.DualText = styled.div``;
 
+S.RouteText = styled.p`
+
+`;
+
+S.PageIntroTextBlock = styled.div`
+  text-align: center;
+  padding: 0 5%;
+  letter-spacing: 0.1em;
+  max-width: 700px;
+  margin: 0 auto;
+  
+  @media screen and (min-width: 550px) {
+    max-width: 400px;
+    padding: 0;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 500px;
+  }
+`;
+
 S.ShortRectangle = styled.div`
   background: ${({theme}) => theme.mainColor};
   width: 9rem;

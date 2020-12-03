@@ -59,6 +59,23 @@ Decoration.DualText = function DualText({extraClass, mainText, subText, children
 </S.DualText>
 }
 
+Decoration.RouteTextBlock = function RouteTextBlock({routeText, nameText, children, ...restProps}) {
+  return <div {...restProps}>
+      <S.RouteText className="text-xs">{routeText}</S.RouteText>
+      <p className="text-xl font-bold">{nameText}</p>
+      {children}
+    </div>
+}
+
+Decoration.PageIntroTextBlock = function PageIntroTextBlock({topText, title, intro, children, ...restProps}) {
+  return <S.PageIntroTextBlock {...restProps}>
+    <p className="text-xs mb-2 md:text-sm">{topText}</p>
+    <h1 className="text-2xl md:text-3xl mb-2 font-semibold">{title}</h1>
+    <p className="text-xs leading-5 md:text-sm">{intro}</p>
+    {children}
+  </S.PageIntroTextBlock>
+}
+
 Decoration.ShortRectangle = function ShortRectangle({children, ...restProps}) {
   return <S.ShortRectangle {...restProps}>{children}</S.ShortRectangle>
 }
