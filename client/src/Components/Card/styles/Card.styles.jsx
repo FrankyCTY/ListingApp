@@ -35,7 +35,7 @@ S.ProductCardDecoDiv = styled.div`
   left: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.5);
-  height: 75%;
+  height: 100%;
   pointer-events: none;
   opacity: 0;
 `;

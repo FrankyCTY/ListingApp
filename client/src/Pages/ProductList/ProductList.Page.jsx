@@ -1,8 +1,8 @@
 import React from "react";
-import {Decoration, Card, Button} from "../../Components";
+import {Decoration, Card, Button, Image} from "../../Components";
 import GridContainer from "../../Containers/grid/grid.container";
 
-export default function ProductListPage({}) {
+export default function ProductListPage() {
   
   return <div className="ProductList_Page">
 
@@ -17,7 +17,9 @@ export default function ProductListPage({}) {
       <Decoration.ThickRectangle className="absolute" style={{top: "4rem"}} />
       
       <GridContainer>
-      {new Array(12).fill(1).map((card, idx) => <Card.ProductCard key={idx} cardImg="https://images.unsplash.com/photo-1605452052713-e76a575c96a2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&ixlib=rb-1.2.1&q=80&w=600" alt="test Img"/>)}
+        {new Array(12).fill(1).map((card, idx) => <Card.ProductCard key={idx}>
+        <Image.LazyLoadImg imgHeight={600} src="https://images.unsplash.com/photo-1605452052713-e76a575c96a2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&ixlib=rb-1.2.1&q=80&w=600" alt="pic-03" />
+        </Card.ProductCard>)}
       </GridContainer>
     </div>
 

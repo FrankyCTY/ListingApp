@@ -15,13 +15,14 @@ export default function HomeBodyContainer() {
         {/* picture */}
         <div className="relative">
           <S.PicOneContainer className="relative">
-              <img className="md:rounded-full md:w-64 md:h-64 lg:w-128 lg:h-128" src="https://images.unsplash.com/photo-1604870560352-c6fffb2a1e06?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixlib=rb-1.2.1&q=80&w=800" alt="pic01"/>
+              {/* <img className="md:rounded-full md:w-64 md:h-64 lg:w-128 lg:h-128" src="https://images.unsplash.com/photo-1604870560352-c6fffb2a1e06?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixlib=rb-1.2.1&q=80&w=800" alt="pic01"/> */}
+              <Image.LazyLoadImg imgHeight={400} className="md:rounded-full md:w-64 md:h-64 lg:w-128 lg:h-128" src="https://images.unsplash.com/photo-1604870560352-c6fffb2a1e06?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixlib=rb-1.2.1&q=80&w=800" alt="pic01" />
               {isTabletView && <Decoration.DualText mainText="豬肉雞軟骨餃子" subText="豬肉雞軟骨餃子" extraClass="absolute right-0 top-0 transform translate-y-16 lg:translate-y-24 -translate-x-2"/>}
           </S.PicOneContainer>
-          <S.ThreeImagesContainer>
-          <img className="w-30% md:w-32 lg:w-64 md:mr-4 lg:mr-8 translate-y-35% transform" src="https://images.unsplash.com/photo-1605459486495-d6236e892999?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixlib=rb-1.2.1&q=80&w=300" alt="pic02"/>
-          <img className="w-30% md:w-32 lg:w-64 md:mr-4 lg:mr-8" src="https://images.unsplash.com/photo-1605459486495-d6236e892999?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixlib=rb-1.2.1&q=80&w=300" alt="pic03"/>
-          <img className="w-30% md:w-32 lg:w-64 md:mr-4 lg:mr-8 -translate-y-35% transform" src="https://images.unsplash.com/photo-1605459486495-d6236e892999?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixlib=rb-1.2.1&q=80&w=300" alt="pic04"/>
+          <S.ThreeImagesContainer>      
+            <Image.LazyLoadImg imgHeight={300} className="w-30% md:w-32 lg:w-64 md:mr-4 lg:mr-8 translate-y-35% transform" src="https://source.unsplash.com/random/300x400" alt="pic-04" />
+            <Image.LazyLoadImg imgHeight={300} className="w-30% md:w-32 lg:w-64 md:mr-4 lg:mr-8" src="https://source.unsplash.com/random/300x400" alt="pic-04" />
+            <Image.LazyLoadImg imgHeight={300} className="w-30% md:w-32 lg:w-64 md:mr-4 lg:mr-8 -translate-y-35% transform" src="https://source.unsplash.com/random/300x400" alt="pic-04" />
           </S.ThreeImagesContainer>
 
           <div className="ml-5%">
@@ -45,7 +46,7 @@ export default function HomeBodyContainer() {
               {isTabletView && <Button.TwoLinesBtn className="absolute" style={{top: "80%", left: "-5rem"}}/>}
             </div>
             {/* picture */}
-            <img className="ml-4" src="https://images.unsplash.com/photo-1605407869548-958d58b7cebc?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&ixlib=rb-1.2.1&q=800&w=1280" alt="pic-04"/>
+            <Image.LazyLoadImg imgHeight={1280} className="ml-4" src="https://images.unsplash.com/photo-1605407869548-958d58b7cebc?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&ixlib=rb-1.2.1&q=800&w=1280" alt="pic-04" />
           </S.BigImgContainer>
           {!isTabletView && <Button.TwoLinesBtn className="mt-16 mx-auto"/>}
       </section>
