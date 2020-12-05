@@ -7,7 +7,7 @@ import HomeBodyContainer from "../../Containers/homeBody/homeBody.container";
 // import HomeHeaderContainer from "../../Containers/homeHeader/homeHeader.container";
 
 export default function HomePage() {
-  return <div className="HomePage-container overflow-hidden">
+  return <div className="HomePage-container">
     {/* <NavContainer/>
     <HomeHeaderContainer/> */}
     <HomeBodyContainer/>

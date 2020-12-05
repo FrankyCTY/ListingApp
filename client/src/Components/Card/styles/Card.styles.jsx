@@ -9,14 +9,16 @@ S.ProductCardContainer = styled.div`
   cursor: pointer;
   position: relative;
   
-  &:hover {
-    .productCard_decoDiv {
-      opacity: 1;
-    }
+  @media (hover: hover) and (pointer: fine){
+    &:hover {
+      .productCard_decoDiv {
+        opacity: 1;
+      }
 
-    .ProductCardFooter {
-      background: ${({theme}) => theme.secondColor};
-      color: white;
+      .ProductCardFooter {
+        background: ${({theme}) => theme.secondColor};
+        color: white;
+      }
     }
   }
 

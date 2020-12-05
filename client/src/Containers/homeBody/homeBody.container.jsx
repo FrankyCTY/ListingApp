@@ -20,9 +20,9 @@ export default function HomeBodyContainer() {
               {isTabletView && <Decoration.DualText mainText="豬肉雞軟骨餃子" subText="豬肉雞軟骨餃子" extraClass="absolute right-0 top-0 transform translate-y-16 lg:translate-y-24 -translate-x-2"/>}
           </S.PicOneContainer>
           <S.ThreeImagesContainer>      
-            <Image.LazyLoadImg imgHeight={300} className="w-30% md:w-32 lg:w-64 md:mr-4 lg:mr-8 translate-y-35% transform" src="https://source.unsplash.com/random/300x400" alt="pic-04" />
-            <Image.LazyLoadImg imgHeight={300} className="w-30% md:w-32 lg:w-64 md:mr-4 lg:mr-8" src="https://source.unsplash.com/random/300x400" alt="pic-04" />
-            <Image.LazyLoadImg imgHeight={300} className="w-30% md:w-32 lg:w-64 md:mr-4 lg:mr-8 -translate-y-35% transform" src="https://source.unsplash.com/random/300x400" alt="pic-04" />
+            <Image.LazyLoadImg imgHeight={300} className="w-70% mr-2 md:w-32 lg:w-64 md:mr-4 lg:mr-8 translate-y-35% transform" src="https://source.unsplash.com/random/300x400" alt="pic-04" />
+            <Image.LazyLoadImg imgHeight={300} className="w-70% mr-2 md:w-32 lg:w-64 md:mr-4 lg:mr-8" src="https://source.unsplash.com/random/300x400" alt="pic-04" />
+            <Image.LazyLoadImg imgHeight={300} className="w-70% md:w-32 lg:w-64 md:mr-4 lg:mr-8 -translate-y-35% transform" src="https://source.unsplash.com/random/300x400" alt="pic-04" />
           </S.ThreeImagesContainer>
 
           <div className="ml-5%">
@@ -63,9 +63,7 @@ export default function HomeBodyContainer() {
             <Image.ImgWithIntro className="" introText="豬肉雞軟骨餃子" imgSrc="https://images.unsplash.com/photo-1605390756826-929ca1afd861?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixlib=rb-1.2.1&q=80&w=800" alt="pic-102"/>
           </div>
         {/* </S.Section4PlaceHolder> */}
-        <div className="overflow-hidden">
-          <Button.TwoLinesBtn className="mx-auto mt-2 mb-12 md:absolute md:right-0 md:transform md:-translate-y-12 md:translate-x-6"/>
-        </div>
+        <Button.TwoLinesBtn className="mx-auto mt-2 mb-12 md:absolute md:right-0 md:transform md:-translate-y-12 md:translate-x-6"/>
       </section>
   </div>
 }
