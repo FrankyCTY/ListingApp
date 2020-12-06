@@ -9,7 +9,7 @@ S.ProductCardContainer = styled.div`
   cursor: pointer;
   position: relative;
   
-  @media (hover: hover) and (pointer: fine){
+  @media(any-pointer: fine) {
     &:hover {
       .productCard_decoDiv {
         opacity: 1;
